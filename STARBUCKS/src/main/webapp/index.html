@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>스타벅스</title>
+	</head>
+	<body>
+		<script>
+			let hostIndex = location.href.indexOf( location.host ) + location.host.length;
+			let contextPath = location.href.substring( hostIndex, location.href.indexOf('/', hostIndex + 1) );
+			console.log(hostIndex);
+			console.log(contextPath);
+			location.href = contextPath + '/index.star';
+		</script>
+	</body>
+</html>
