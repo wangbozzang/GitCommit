@@ -27,5 +27,9 @@ public class StarbucksController {
 			StarbucksModel.makeFood(req);
 			req.getRequestDispatcher("/jsp/starbucks/order.jsp").forward(req, res);
 		}
+		if ( -1 < uri.indexOf("/orderList.star") ) {
+			StarbucksModel.selectOrderList(req);
+			req.getRequestDispatcher("/jsp/starbucks/order_list.jsp").forward(req, res);
+		}
 	}
 }

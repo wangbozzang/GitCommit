@@ -9,7 +9,7 @@
 		<title>스타벅스</title>
 		<link href="<c:url value='/css/popup.css'/>" rel="stylesheet">
 		<script src="<c:url value='/js/jquery-3.7.1.min.js'/>"></script>
-	</head> 
+	</head>
 	<body>
 		<div>
 			<h1>스타벅스(a)에 오신걸 환영합니다!</h1>
@@ -30,7 +30,8 @@
 			</div>
 			<div>
 				<ul>
-					<li><a href="<c:url value='/starbucks/menu.star'/>">메뉴</a></li>
+					<li><a href="<c:url value='/starbucks/menu.star'/>">주문하기</a></li>
+					<li><a href="<c:url value='/starbucks/orderList.star'/>">주문조회</a></li>
 					<li><a href="<c:url value='/file/main.star'/>">파일</a></li>
 				</ul>
 			</div>
